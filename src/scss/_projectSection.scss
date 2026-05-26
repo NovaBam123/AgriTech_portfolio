@@ -1,0 +1,345 @@
+// ========================================================
+// SMARTPHONE MOCKUP PREMIUM WITH FIXED ANDROID NAVIGATION
+// ========================================================
+
+// File: src/scss/_productMockup.scss
+
+.iphone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #3d3d3d;
+  background: transparent;
+}
+
+.iphone-frame {
+  position: relative;
+  height: 575px;
+  width: 265px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  border: 5px solid #3d3d3d;
+  border-radius: 50px;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #999,
+    0 0 30px 0px rgba(0, 0, 0, 0.7);
+  .iphone-buttons {
+    .silent,
+    .vol-up,
+    .vol-down,
+    .sleep {
+      background: linear-gradient(90deg, gray, white, gray);
+      position: absolute;
+      border-radius: 2px 0 0 2px;
+    }
+    .silent {
+      height: 40px;
+      width: 3px;
+      top: 100px;
+      left: -8px;
+    }
+    .vol-up {
+      top: 170px;
+      left: -8px;
+      height: 60px;
+      width: 4px;
+    }
+    .vol-down {
+      top: 250px;
+      left: -8px;
+      height: 60px;
+      width: 4px;
+    }
+    .sleep {
+      left: auto;
+      right: -8px;
+      top: 180px;
+      height: 100px;
+      width: 4px;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  // Desain Fisik Notch / Poni Atas iPhone
+  .iphone-top-notch {
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    filter: url("#goo");
+
+    .black-bar {
+      position: absolute;
+      height: 1px;
+      width: 70%;
+      padding-top: 2px;
+      background: #111;
+    }
+
+    .iphone-top-hardware {
+      position: relative;
+      height: 40px;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 0 20px 20px;
+      background: #111;
+      z-index: 2;
+    }
+  }
+
+  // Komponen Kamera & Speaker di dalam Notch
+  .iphone-components {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+    .speaker {
+      height: 6px;
+      width: 70px;
+      margin: 0 30px;
+      border-radius: 6px;
+      border-bottom: 1px solid #333;
+      background: #222;
+    }
+
+    .camera {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border-bottom: 1px solid #444;
+      background: radial-gradient(black, #333);
+      opacity: 0.5;
+
+      .shine-left {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        margin: 2px;
+        border-left: 4px solid #1e90ff !important;
+        background: black;
+        border-radius: 50%;
+        filter: blur(1.8px);
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: 0px;
+          height: 8px;
+          width: 8px;
+          border-right: 2px solid white;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  // Layar Internal iPhone yang Berisi Screenshot App Lu
+  .iphone-screen-area {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    border-radius: 40px;
+    overflow: hidden;
+    background: #0b0f12; // Base background mengikuti warna aplikasi enterprise lu
+
+    // Container screenshot agar bisa di-scroll internal
+    .app-scroll-viewport {
+      height: 100%;
+      width: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: relative;
+      padding-bottom: 90px;
+      position: relative;
+
+      // Sembunyikan scrollbar bawaan browser agar terlihat estetik seperti hp asli
+      &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+    }
+    // STYLING ANDROID NAV BAR FIXED AT BOTTOM
+    .phone-nav-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      background: #000000; // Hitam pekat khas bezel bawah sistem operasi
+      border-top: 1px solid #1f2937;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // Mengunci posisi di atas tumpukan viewport gambar
+      padding-bottom: 8px; // Estetika dagu handphone modern
+
+      .nav-button-wrapper {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .android-btn {
+        color: #888888;
+        font-size: 0.75rem;
+        cursor: pointer;
+        font-weight: bold;
+        transform: rotate(90deg); // Bikin simbol ||| jadi horizontal mendatar
+        display: inline-block;
+      }
+
+      .android-btn-home {
+        width: 12px;
+        height: 12px;
+        border: 2px solid #888888;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .android-btn-back {
+        color: #888888;
+        font-size: 0.8rem;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+
+    // Status Bar Atas (Jam, Sinyal, Baterai) - Terkunci (Fixed Absolute) di Atas Layar
+    .iphone-status-bar {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5px 0 10px;
+      z-index: 1150; // Di bawah notch, tapi di atas gambar app
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        sans-serif;
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 300;
+      opacity: 0.7;
+
+      .status-left {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+
+      .status-right {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        .signal-bars {
+          display: flex;
+          align-items: flex-end;
+          gap: 2px;
+          width: 18px;
+          height: 10px;
+
+          .bar {
+            width: 3px;
+            background: white;
+            border-radius: 0.5px;
+            &:nth-child(1) {
+              height: 25%;
+            }
+            &:nth-child(2) {
+              height: 50%;
+            }
+            &:nth-child(3) {
+              height: 75%;
+            }
+            &:nth-child(4) {
+              height: 100%;
+            }
+          }
+        }
+
+        .battery-icon {
+          position: relative;
+          height: 11px;
+          width: 22px;
+          border: 1px solid white;
+          border-radius: 3px;
+          display: flex;
+          align-items: center;
+          padding: 1px;
+
+          .energy {
+            height: 100%;
+            width: 80%; // Sisa persentase baterai mockup
+            background: white;
+            border-radius: 1px;
+          }
+
+          .nub {
+            position: absolute;
+            right: -3px;
+            top: 3px;
+            height: 3px;
+            width: 2px;
+            background: white;
+            border-radius: 0 1px 1px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.border-zinc-light {
+  width: 8rem;
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+.box-lime {
+  border: none !important;
+  color: #000000;
+  background: #39ff14 !important;
+}
+.box-orange {
+  border: none !important;
+  color: white;
+  background: #e6740a !important;
+}
+.btn-lime {
+  color: #fff !important;
+  border: 1px solid #39ff14;
+  &:hover {
+    background: #39ff14;
+    color: #000 !important;
+  }
+}
+.btn-orange {
+  border: 1px solid #e6740a;
+  &:hover {
+    background: #e6740a;
+  }
+}
+
+
+// Responsivitas Skala Handphone pada Layar Mobile
+@media screen and (max-width: 576px) {
+  .iphone-frame {
+    height: 575px;
+    transform: scale(0.8);
+  }
+}

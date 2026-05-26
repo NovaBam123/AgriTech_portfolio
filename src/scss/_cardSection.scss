@@ -1,0 +1,62 @@
+.bg-zinc-dark {
+  background-color: #0b0f12 !important; // Ambil warna dari bapaknya Sesi 2 tadi
+}
+.border-zinc {
+  border: 1px solid #1f2937 !important;
+}
+.card-img-wrapper {
+  overflow: hidden;
+  border-bottom: 1px solid #1f2937;
+  background-color: #12181f; // Memberi fill gelap di belakang bagan agar menyatu saat aspect-ratio menciut
+  height: 220px; // Mengunci tinggi wrapper agar semua kartu seragam tinggi fotonya
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .filter-grain {
+    filter: grayscale(80%) contrast(110%);
+    transition: filter 0.3s ease;
+    width: 100%;
+    height: 100%;
+
+    // Default untuk foto biasa (Kartu 1)
+    object-fit: cover;
+
+    // KUNCI UTAMA: Class khusus untuk gambar berbentuk bagan/chart (Kartu 2 & 3)
+    &.img-contain {
+      object-fit: contain;
+      border-radius: 10px !important;
+    }
+  }
+
+  &:hover .filter-grain {
+    filter: grayscale(0%) contrast(100%);
+  }
+}
+.card-badge-mono {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #000000;
+  border: 1px solid #39ff14;
+  color: #39ff14;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+}
+.second-card {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background: #000000;
+  border: 1px solid #39ff14;
+  color: #39ff14;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+}
+.text-orange {
+  color: #de6d21;
+  font-weight: 600;
+}
+.card-body .first{
+    font-size: 1.1rem;
+}

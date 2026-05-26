@@ -1,0 +1,70 @@
+// src/scss/_expertise.scss
+
+// Bagian Global Sesi 2 (Background Zinc Gelap Papan Catur)
+#skills {
+  background-color: #0b0f12 !important; // Blok Zinc Gelap
+  padding: 6rem 0; // Kasih ruang napas lega atas bawah
+}
+
+.card-domain {
+  // ==========================================
+  // CARD 1: SISI AGRI (KOLOM PERTAMA)
+  // ==========================================
+  & > div:nth-of-type(1) {
+    .card {
+      background: #000000 !important;
+      border: 1px solid #39ff14 !important; // Border Cyber Lime
+
+      .card-title {
+        color: #ffffff !important;
+      }
+
+      // Target teks list di kartu Agri
+      ul li {
+        color: #9ca3af !important; // Abu-abu terang agar teks gampang dibaca
+      }
+      ul li > span {
+        color: #39ff14;
+      }
+      ul li > div {
+        line-height: 1.35;
+        margin-bottom: 5px;
+      }
+      ul {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  // ==========================================
+  // CARD 2: SISI JAVASCRIPT (KOLOM KEDUA)
+  // ==========================================
+  & > div:nth-of-type(2) {
+    .card {
+      background: #000000 !important;
+      border: 1px solid #de6d21 !important; // Border
+      .card-title {
+        color: #ffffff !important;
+      }
+      // 💥 1. TARGET LOGO "JS" (Teks murni di dalam div)
+      .display-5 {
+        color: #de6d21 !important; // Paksa jadi Oranye murni, hilangkan text-warning bawaan
+        font-family: "JetBrains Mono", monospace;
+      }
+      // 💥 2. TARGET TEKS LIST & ENTITY CEKLIST KANAN
+      ul li {
+        color: #9ca3af !important;
+        // Target simbol ceklist kanan (menggantikan text-warning bootstrap)
+        span {
+          color: #de6d21 !important;
+        }
+      }
+      ul li > div {
+        line-height: 1.35;
+        margin-bottom: 5px;
+      }
+      ul {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

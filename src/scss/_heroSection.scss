@@ -1,0 +1,101 @@
+// src/scss/_hero.scss
+
+.hero-wrapper {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-bottom: 1px solid #1f2937; // Batas zinc tipis yang elegan
+
+  .hero-kicker {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #6b7280; // Abu-abu redup khas komentar code
+
+    span {
+      border: 1px solid rgba(#39ff14, 0.2);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      background: rgba(#39ff14, 0.02);
+    }
+  }
+
+  .hero-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 3.8rem;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    max-width: 52rem;
+    margin: 0 auto;
+
+    .text-lime {
+      color: #39ff14; // Cyber Lime dari navbar lu
+    }
+
+    .text-orange {
+      color: #de6d21; // Oranye traktor lu
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .hero-lead {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #9ca3af;
+    max-width: 38rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+      font-size: 0.95rem;
+    }
+  }
+
+  // Desain Tombol Industrial
+  .btn-hero-primary {
+    background-color: #39ff14 !important;
+    color: #000000 !important;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border: none;
+    padding: 0.8rem 2.2rem;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #2ecc11 !important;
+      box-shadow: 0 0 20px rgba(#39ff14, 0.35);
+      transform: translateY(-1px);
+    }
+  }
+
+  .btn-hero-secondary {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border: 1px solid #374151 !important;
+    padding: 0.8rem 2.2rem;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border-color: #ffffff !important;
+      background-color: rgba(255, 255, 255, 0.04) !important;
+      transform: translateY(-1px);
+    }
+  }
+}
+@media(max-width: 768px){
+    .hero-kicker span{
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+}
