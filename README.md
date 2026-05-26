@@ -1,12 +1,12 @@
 # High-Tech Agritech Portfolio // Single Page Application (SPA)
 
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/https://www.linkedin.com/in/nova-bamahry-2b043527/)](https://portfolio-novab.netlify.app) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5a89c59-3518-43d2-b134-0a745720aa0c/deploy-status)](https://portfolio-agritech.netlify.app)
 [![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev/)
 [![Bootstrap](https://img.shields.io/badge/UI--Framework-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
 An industrial-grade, single-page professional portfolio engineered specifically for the intersection of **Agricultural Research** and **Modern Software Engineering**. This application showcases production-ready utilities designed to solve real-world agricultural data limits through computational efficiency and high-glare field visibility.
 
-🌐 **Live Demo:** [portfolio-novab.netlify.app](https://portfolio-novab.netlify.app)
+🌐 **Live Demo:** [AgriTech-Portfolio](https://portfolio-agritech.netlify.app)
 
 ---
 
