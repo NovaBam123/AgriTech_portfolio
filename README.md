@@ -1,6 +1,6 @@
 # High-Tech Agritech Portfolio // Single Page Application (SPA)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-site-id/deploy-status)](https://portfolio-novab.netlify.app)
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/https://www.linkedin.com/in/nova-bamahry-2b043527/)](https://portfolio-novab.netlify.app) -->
 [![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev/)
 [![Bootstrap](https://img.shields.io/badge/UI--Framework-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
@@ -42,7 +42,7 @@ src/
 └── assets/                    # High-resolution optimized transparent assets
 
 ## JS
-```
+```javascript
 export const getFavIcon = (url) => {
   try {
     const domain = new URL(url).hostname;
@@ -52,6 +52,7 @@ export const getFavIcon = (url) => {
   }
 };
 ```
+
 🌾 About the Architect
 Engineered by a T-Shape Agronomist & Developer with over 10 years of extensive field experience in hybrid seed engineering and rice production management. This portfolio serves as a concrete bridge connecting advanced agronomic field logic with lightweight, production-ready frontend architectures.
 
