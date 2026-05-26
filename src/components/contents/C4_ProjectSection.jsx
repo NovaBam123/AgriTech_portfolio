@@ -1,5 +1,5 @@
 import { Badge, Button, Col, Container, Row } from "react-bootstrap";
-import productAgriPOP from "../../assets/04a_productAgriPop.png";
+import productAgriPOP from "../../assets/04a_productAgriPOP.png";
 import productMarkedIT from "../../assets/05_markedItProd.png";
 
 function C4_ProjectSection() {
