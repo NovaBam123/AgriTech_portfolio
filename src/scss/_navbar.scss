@@ -11,22 +11,32 @@
 }
 .brand-text > span:nth-of-type(1) {
   color: #39ff14;
-  letter-spacing: 2px !important;
+  letter-spacing: 1.2px !important;
   font-size: 0.8rem;
   &:first-letter {
     font-size: 2rem !important;
     font-weight: 700;
   }
 }
-.small-brand {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
+.desc-brand {
+  color: #39ff14;
+  font-size: 0.7rem !important;
 }
-.small-brand > small:nth-of-type(1) {
-  color: #de6d21;
+.tracking-wider span {
+  font-size: 1rem;
+}
+.small-brand,
+.desc-brand {
+  font-size: 0.8rem;
+}
+.small-brand > small:nth-of-type(odd) {
+  color: white;
 }
 .small-brand > small:nth-of-type(2) {
   color: #39ff14;
+}
+.small-brand small + small {
+  margin-left: 0.15rem;
 }
 
 .brand-text > span span {
@@ -74,14 +84,18 @@
   justify-content: flex-end !important;
 }
 
-
 @media (min-width: 768px) {
-  .brand-text > span:nth-of-type(1) {
-    letter-spacing: 1px;
-    font-size: 1.5rem;
+  .small-brand small + small {
+    margin-left: 0.5rem;
   }
-  .brand-text > small {
-    font-size: 0.9rem;
-    letter-spacing: 0.7rem;
+  .tracking-wider span {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .small-brand small {
+    letter-spacing: 0.3rem;
+  }
+  .small-brand small:nth-of-type(odd){
+    color:#de6d21;
   }
 }

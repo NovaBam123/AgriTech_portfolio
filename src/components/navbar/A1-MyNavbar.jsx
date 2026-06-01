@@ -21,14 +21,18 @@ function A1_MyNavbar() {
             </div>
             <div className="d-flex flex-col">
               <div className="d-flex flex-column brand-text">
-                <span className="fw-mono tracking-wider mb-0 lh-1 small">
-                  AGRICULTURE
-                  <span> DEVELOPER</span>
-                </span>
-                <div className="small-brand">
-                  <small>T-Shape</small>
-                  <small> Agronomist </small>
+                <div className="d-flex tracking-wider gap-1">
+                  <span className="text-lime fw-mono mb-0">AGRICULTURE</span>
+                  <span className="text-orange"> SYSTEMS</span>
                 </div>
+                <div className="d-flex small-brand">
+                  <small>Agronomy</small>
+                  <small>•Data </small>
+                  <small>•Decision Support</small>
+                </div>
+                {/* <small className="desc-brand d-block d-md-none">
+                  Decision Support
+                </small> */}
               </div>
             </div>
           </div>

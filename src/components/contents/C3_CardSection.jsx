@@ -36,10 +36,10 @@ function C3_CardSection() {
                   as="h4"
                   className="text-white mb-2 font-monospace first"
                 >
-                  01_CYTOPLASMIC_MALE_STERILITY
+                  01_CMS_STERILITY
                 </Card.Title>
                 <Card.Text className="text-secondary small">
-                 Pengujian mikroskopis sterilitas polen hingga tingkat akurasi 98% pada galur induk Cytoplasmic Male Sterility (CMS). Menjamin stabilitas genetik dan mencegah terjadinya kontaminasi klonal pada produksi benih padi hibrida skala industri.
+                 Validasi mikroskopis sterilitas polen hingga tingkat akurasi 98% pada galur induk Cytoplasmic Male Sterility (CMS). Menjamin stabilitas genetik dan mencegah terjadinya kontaminasi klonal pada produksi benih padi hibrida skala industri.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -67,7 +67,7 @@ function C3_CardSection() {
                   02_OFF_FIELD_MORPHOLOGY
                 </Card.Title>
                 <Card.Text className="text-secondary small">
-                 Pencatatan data morfologi fenotipe makro. Mamvalidasi hasil hibrida ekstrem: bentuk gabah super-panjang diatas 1cm guna standarisasi basis data AgriPOP.  
+                Dokumentasi dan validasi karakter morfologi fenotipe untuk mendukung evaluasi performa galur, pengamatan lapangan, serta pengumpulan data agronomi yang terstruktur. 
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -93,7 +93,7 @@ function C3_CardSection() {
                   03_MOBILE_FIELD_LOGGING 
                 </Card.Title>
                 <Card.Text className="text-secondary small">
-                  Implementasi PWA platform MarkedIT Agri (PWA) secara *offline-first* langsung di perangkat mobile berteknologi rendah di bawah terik matahari.
+               Implementasi platform MarkedIT Agri secara langsung. Dirancang dengan pendekatan offline-first untuk mendukung dokumentasi operasional, pencatatan data terstruktur, dan akses informasi di area dengan keterbatasan konektivitas.
                 </Card.Text>
               </Card.Body>
             </Card>

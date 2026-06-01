@@ -6,25 +6,32 @@ function C1_HeroSection() {
       <Container>
         {/* Eyebrow Text: Nuansa Lab Data & PWA */}
         <div id="hero" className="hero-kicker font-monospace mb-4">
-          <span>DEPLOYED PRODUCTION-READY AGRI-TECH PLATFORMS</span>
+          <span>PRODUCTION-READY AGRITECH SYSTEMS</span>
         </div>
 
         {/* Headline Utama */}
         <h1 className="hero-title mb-4">
-          Bridging the Gap Between{" "}
-          <span className="text-lime">Agronomy Field Data</span> and{" "}
-          <span className="text-orange">High-Performance PWAs</span>.
+          Transforming Agricultural{" "}
+          <span className="text-lime">Field Operations</span> Into{" "}
+          <span className="text-orange">
+            Structured Data and Decision Support Systems
+          </span>
+          .
         </h1>
 
         {/* Deskripsi: Kita suntikkan poin Markdown & Tagging dari live app lu */}
-        <p className="hero-lead mx-auto mb-5">
-          Berbekal 10 tahun rekam jejak riset lapangan dan purifikasi inbrida dan
-          hibrida. Kini fokus membangun ekosistem digital taktis yang{" "}
-          <span className="text-white fw-semibold">offline-first</span>—seperti
-          sistem mitigasi{" "} dan sistem pengambilan keputusan{" "}
-          <span className="text-lime font-monospace ">AgriPOP</span>{" "}dan platform
-          <span className="fst-italic text-white-50 fw-semibold"> structured logging</span>{" "}berbasis Markdown{" "}
-          <span className="text-lime font-monospace">MarkedIT-Agri</span>.
+        <p className="hero-lead mx-auto mb-5 text-start text-md-center">
+          Setelah lebih dari satu dekade berkecimpung dalam operasional
+          <i> Cytoplasmic Male Sterility </i> (CMS) dan riset lapangan
+          pertanian, saya kini fokus membangun sistem agritech siap pakai
+          <span className="text-white fw-semibold"> (production-ready)</span> dengan arsitektur{" "}
+          <span className="text-white fw-semibold">offline-first</span>. Sistem
+          ini dirancang untuk mentransformasi observasi lapangan yang
+          terfragmentasi menjadi data dan dokumentasi operasional yang
+          terstruktur melalui platform{" "}
+          <span className="text-lime font-monospace">MarkedIT Agri</span>, serta instrumen pendukung keputusan taktis melalui{" "}
+          <span className="text-lime font-monospace">AgriPOP v2</span>
+           {" "}guna mengurangi risiko kesalahan estimasi di lingkungan pertanian terpencil.
         </p>
 
         {/* Duo Tombol Aksi Taktis */}
@@ -36,7 +43,7 @@ function C1_HeroSection() {
             rel="noopener noreferrer"
             className="btn-hero-primary shadow-sm"
           >
-            Launch_AgriPOP
+            Open_AgriPOP Platform
           </Button>
 
           {/* Tombol Eksternal langsung nembak ke Live App Netlify Lu */}
@@ -46,7 +53,7 @@ function C1_HeroSection() {
             rel="noopener noreferrer"
             className="btn-hero-secondary"
           >
-           {"Open_Live_MarkedIT \u2197"}
+            {"Explore_MarkedIT \u2197"}
           </Button>
         </div>
       </Container>

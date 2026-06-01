@@ -18,15 +18,13 @@ function C5_ContactSection() {
           {/* KOLOM KIRI: Call to Action & Visi */}
           <Col lg={6} className="mb-4 mb-lg-0">
             <span className="text-lime font-monospace small d-block mb-2">
-              // AVAILABLE_FOR_TECHNICAL_ROLES
+              // AGRITECH_COLLABORATION
             </span>
-            <h2 className="fw-bold font-monospace display-6 mb-3">
-              Let's Build the Future of Agritech
+            <h2 className="fw-bold font-monospace mb-3">
+             Transforming Agricultural Knowledge into Operational Systems
             </h2>
             <p className="text-secondary small max-width-md">
-              Siap berkolaborasi untuk mengintegrasikan algoritma komputasi
-              presisi dan arsitektur *offline-first* ke dalam sistem riset
-              pemuliaan tanaman maupun skala produksi industri Anda.
+             Menggabungkan pengalaman lapangan agronomi dengan pengembangan sistem digital untuk membangun solusi dokumentasi, analisis, dan pengambilan keputusan yang dapat diterapkan langsung pada lingkungan operasional pertanian.
             </p>
           </Col>
 
@@ -107,7 +105,7 @@ function C5_ContactSection() {
                 <div className="d-flex align-items-center gap-3">
                   <img
                     src={getFavIcon(instagramUrl)}
-                    alt="Gmail"
+                    alt="Instagram"
                     style={{
                       width: "24px",
                       height: "24px",
@@ -126,10 +124,10 @@ function C5_ContactSection() {
         <hr className="border-zinc-light mt-5" />
         <Row className="align-items-center text-secondary small font-monospace">
           <Col md={6} className="text-center text-md-start mb-2 md-mb-0">
-            © {currentYear} // AGRICULTURE DEVELOPER. ALL RIGHTS RESERVED.
+            © {currentYear} // AGRITECT SYSTEMS. ALL RIGHTS RESERVED.
           </Col>
           <Col md={6} className="text-center text-md-end text-orange small">
-            T-SHAPE AGRONOMIST // CODES BUILT FOR RUGGED FIELD VALIDATION
+           AGRONOMY EXPERTISE // DIGITAL SYSTEM // FIELD OPERATIONS
           </Col>
         </Row>
       </Container>

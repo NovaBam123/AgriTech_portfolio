@@ -88,4 +88,95 @@ export const SvgLogo = {
       </svg>
     );
   },
+  workflowSquare01: (props) => {
+    return (
+      <svg
+        width={props?.size || props?.width || "45"}
+        height={props?.size || props?.height || props?.width || "45"}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={props?.className || ""}
+        style={props?.style}
+      >
+        {/* Background transparan bawaan icon asli */}
+        <path d="M0 0h24v24H0z" fill="none" />
+
+        {/* Group stroke bawaan dari hasil decode Base64 workflow lu */}
+        <g
+          fill="none"
+          stroke={props?.stroke || props?.fill || "currentColor"}
+          strokeWidth={props?.strokeWidth || "1.5"}
+        >
+          {/* Path Struktur Node atas, bawah, dan percabangan kanan */}
+          <path d="M6 5.5c0-.935 0-1.402.201-1.75a1.5 1.5 0 0 1 .549-.549C7.098 3 7.565 3 8.5 3h3c.935 0 1.402 0 1.75.201a1.5 1.5 0 0 1 .549.549C14 4.098 14 4.565 14 5.5s0 1.402-.201 1.75a1.5 1.5 0 0 1-.549.549C12.902 8 12.435 8 11.5 8h-3c-.935 0-1.402 0-1.75-.201a1.5 1.5 0 0 1-.549-.549C6 6.902 6 6.435 6 5.5Zm0 10c0-.935 0-1.402.201-1.75a1.5 1.5 0 0 1 .549-.549C7.098 13 7.565 13 8.5 13h3c.935 0 1.402 0 1.75.201a1.5 1.5 0 0 1 .549.549c.201.348.201.815.201 1.75s0 1.402-.201 1.75a1.5 1.5 0 0 1-.549.549c-.348.201-.815.201-1.75.201h-3c-.935 0-1.402 0-1.75-.201a1.5 1.5 0 0 1-.549-.549C6 16.902 6 16.435 6 15.5Zm14.84 1.64c.773-.773 1.16-1.16 1.16-1.64s-.387-.867-1.16-1.64l-.2-.2c-.773-.773-1.16-1.16-1.64-1.16s-.867.387-1.64 1.16l-.2.2c-.773.773-1.16 1.16-1.16 1.64s.387.867 1.16 1.64l.2.2c.773.773 1.16 1.16 1.64 1.16s.867-.387 1.64-1.16z" />
+
+          {/* Path Garis Alur Konektor antar Node */}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6.006 5.5H2.008m0 0V2m0 3.5V12c0 1.104-.151 2.468.888 3.163c.504.337 1.206.337 2.61.337m8.496 0h2m2.998-3v-3c0-1.886 0-2.828-.585-3.414c-.586-.586-1.528-.586-3.413-.586h-1M22 22c-.932 0-1.398 0-1.765-.13c-.49-.175-.88-.508-1.083-.928C19 20.627 19 20.227 19 19.429V19"
+          />
+        </g>
+      </svg>
+    );
+  },
+  databaseCog: (props) => {
+    return (
+      <svg
+        width={props?.size || props?.width || "45"}
+        height={props?.size || props?.height || props?.width || "45"}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={props?.className || ""}
+        style={props?.style}
+      >
+        {/* Background transparan bawaan icon asli */}
+        <path d="M0 0h24v24H0z" fill="none" />
+
+        {/* Path Isian Solid Database & Gir */}
+        <path
+          fill={props?.fill || props?.stroke || "currentColor"}
+          d="M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4s-3.58 4-8 4s-8-1.79-8-4m8.08 11H12c-4.42 0-8-1.79-8-4v3c0 2.21 3.58 4 8 4h.29a7.4 7.4 0 0 1-.29-2c0-.34.03-.67.08-1M20 12.08V9c0 2.21-3.58 4-8 4s-8-1.79-8-4v3c0 2.21 3.58 4 8 4h.69c1.13-2.37 3.53-4 6.31-4c.34 0 .67.03 1 .08m3.8 8.32c.1 0 .1.1 0 .2l-1 1.7c-.1.1-.2.1-.3.1l-1.2-.4c-.3.2-.5.3-.8.5l-.2 1.3c0 .1-.1.2-.2.2h-2c-.1 0-.2-.1-.3-.2l-.2-1.3c-.3-.1-.6-.3-.8-.5l-1.2.5c-.1 0-.2 0-.3-.1l-1-1.7c-.1-.1 0-.2.1-.3l1.1-.8v-1l-1.1-.8c-.1-.1-.1-.2-.1-.3l1-1.7c.1-.1.2-.1.3-.1l1.2.5c.3-.2.5-.3.8-.5l.2-1.3c0-.1.1-.2.3-.2h2c.1 0 .2.1.2.2l.2 1.3c.3.1.6.3.9.5l1.2-.5c.1 0 .3 0 .3.1l1 1.7c.1.1 0 .2-.1.3l-1.1.8v1zM20.5 19c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5s.7 1.5 1.5 1.5s1.5-.7 1.5-1.5"
+        />
+      </svg>
+    );
+  },
+  workflowCircle03: (props) => {
+    return (
+      <svg
+        width={props?.size || props?.width || "45"}
+        height={props?.size || props?.height || props?.width || "45"}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={props?.className || ""}
+        style={props?.style}
+      >
+        {/* Background transparan bawaan icon asli */}
+        <path d="M0 0h24v24H0z" fill="none" />
+
+        {/* Group stroke bawaan dari hasil decode Base64 branching lu */}
+        <g
+          fill="none"
+          stroke={props?.stroke || props?.fill || "currentColor"}
+          strokeWidth={props?.strokeWidth || "1.5"}
+        >
+          {/* Path Lingkaran/Node Atas */}
+          <path d="M15 5a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
+
+          {/* Path Garis Konektor Percabangan */}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 8v1m0 0c0 .932 0 1.398.178 1.765c.236.49.69.88 1.262 1.083c.43.152.973.152 2.06.152s1.63 0 2.06.152c.571.203 1.026.593 1.262 1.083c.178.367.178.833.178 1.765v1m-7-7c0 .932 0 1.398-.178 1.765c-.236.49-.69.88-1.262 1.083C10.13 12 9.587 12 8.5 12s-1.63 0-2.06.152c-.571.203-1.026.593-1.262 1.083C5 13.602 5 14.068 5 15v1"
+          />
+
+          {/* Path Dua Lingkaran/Node di Bawah */}
+          <path d="M8 19a3 3 0 1 1-6 0a3 3 0 0 1 6 0W0m14 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
+        </g>
+      </svg>
+    );
+  },
 };

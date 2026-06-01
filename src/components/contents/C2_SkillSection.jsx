@@ -7,7 +7,7 @@ function C2_SkillSection() {
       <Container className="custom-container-width">
         <div className="text-center">
           <h2 className="fw-bold d-inline-block position-relative pb-3 section-title text-white-50">
-            Dual Domain
+           Agronomy Meets Digital Systems
             <span className="title-line position-absolute bottom-0 start-50 translate-middle-x bg-success"></span>
           </h2>
         </div>
@@ -27,7 +27,7 @@ function C2_SkillSection() {
                   as="h3"
                   className="h4 fw-bold mb-2 text-dark-emphasis"
                 >
-                  Agricultural Science
+                  Agricultural Field Operations
                 </Card.Title>
                 <ul
                   className="list-unstyled lh-lg text-secondary font-monospace"
@@ -38,15 +38,15 @@ function C2_SkillSection() {
                   </li>
                   <li className="d-flex align-items-center mb-1">
                     <span className="fw-bold me-2">✓</span>
-                    <div>Plant Population & Yield Components Dynamics</div>
+                    <div>Plant Population & Yield Components Analysis</div>
                   </li>
                   <li className="d-flex align-items-center mb-1">
                     <span className="fw-bold me-2">✓</span>
-                    <div>Pre-Planting Risk Mitigation & Viability Analysis</div>
+                    <div>Seed Viability & Pre-Planting Risk Mitigation</div>
                   </li>
                   <li className="d-flex align-items-center">
                     <span className="fw-bold me-2">✓</span>
-                    <div>Field Research Data Logging & Phenotype Protocols</div>
+                    <div>Agricultural Field Research & Structured Data Collection</div>
                   </li>
                 </ul>
               </Card.Body>
@@ -57,32 +57,37 @@ function C2_SkillSection() {
           <Col md={6}>
             <Card className="h-100 px-4 pt-3 shadow-sm">
               <Card.Body className="p-0">
-                <div className="display-5 text-warning mb-2 fw-bold">JS</div>
+                <div className="display-5 mb-2">
+                  {SvgLogo.databaseCog({
+                    fill: "#de6d21",
+                    width: "50"
+                  })}
+                </div>
                 <Card.Title
                   as="h3"
                   className="h4 fw-bold mb-2 text-dark-emphasis m-0 p-0"
                 >
-                  JavaScript Development
+                 Agritech Systems Development
                 </Card.Title>
                 <ul
                   className="list-unstyled lh-lg text-secondary font-monospace"
                 >
                   <li className="d-flex align-items-center mb-2">
                     <span className="fw-bold me-2">✓</span>
-                    <div>React Frontend Framework & Vite Optimization</div>
+                    <div>Offline-First & Documentation Systems</div>
                   </li>
                   <li className="d-flex align-items-center mb-1">
                     <span className="fw-bold me-2">✓</span>
-                    <div>Progressive Web Apps (PWA) Offline Architecture</div>
+                    <div>Field Data Collection & Documentation Systems</div>
                   </li>
                   <li className="d-flex align-items-center mb-1">
                     <span className="fw-bold me-2">✓</span>
-                    <div>Client-Side Storage & Offline-First Data Sync</div>
+                    <div>Decision Support & Operation Workflow Design</div>
                   </li>
                   <li className="d-flex align-items-center">
                     <span className="fw-bold me-2">✓</span>
                     <div>
-                      Interactive Diagram Projection & Risk Data Visualization
+                      Data Visualization & Agricultural Risk Analysis
                     </div>
                   </li>
                 </ul>

@@ -10,10 +10,10 @@ function C4_ProjectSection() {
         <div>
           <hr />
           <span className="text-lime font-monospace small d-block mb-2">
-            PRODUCTION_READY_SOFTWARE
+            PRODUCTION_READY_AGRITECT_SYSTEM
           </span>
           <h2 className="fw-bold font-monospace display-6">
-            Enterprise Agri-Apps
+            Agritech Products
           </h2>
           <hr className="border-zinc-light my-1"/>
         </div>
@@ -121,13 +121,13 @@ function C4_ProjectSection() {
                 bg="dark"
                 className="box-lime border border-zinc font-monospace"
               >
-                REACT_UTILITY
+               DECISION_SUPPORT
               </Badge>
               <Badge
                 bg="dark"
                 className="border box-orange font-monospace text-orange"
               >
-                ALGORITHM
+                POPULATION_ANALYSIS
               </Badge>
             </div>
             <h3 className="h2 font-monospace fw-bold text-lime mb-3">
@@ -137,12 +137,11 @@ function C4_ProjectSection() {
               Sistem pendukung keputusan{" "}
               <span className="text-white small">"decision support tool"</span>{" "}
               untuk kalkulasi presisi kebutuhan benih, analisis populasi
-              tanaman, dan mitigasi risiko persentase perkecambahan di lapangan.
+              tanaman, dan mitigasi risiko persentase perkecambahan di lapangan yang dapat disesuaikan oleh pengguna.
             </p>
             <ul className="text-secondary small list-unstyled font-monospace mb-4">
               <li>
-                <span className="text-lime">✔</span> High-speed mathematical
-                computation
+                <span className="text-lime">✔</span> Mitigating the risk of population gaps due to low germination
               </li>
               <li>
                 <span className="text-lime">✔</span> Zero manual guesswork error
@@ -154,7 +153,7 @@ function C4_ProjectSection() {
               target="_blank"
               className="btn-lime font-monospace btn-sm px-4"
             >
-              LAUNCH_APP ↗
+              EXPLORE_SYSTEM ↗
             </Button>
           </Col>
         </Row>
@@ -168,32 +167,28 @@ function C4_ProjectSection() {
                 bg="dark"
                 className="box-lime border border-zinc font-monospace"
               >
-                PWA
+                FIELD_DOCUMENTATION
               </Badge>
               <Badge
                 bg="dark"
                 className="box-orange font-monospace"
               >
-                OFFLINE_FIRST
+               OFFLINE_FIRST
               </Badge>
             </div>
             <h3 className="h2 font-monospace fw-bold text-orange mb-3">
               02_MarkedIT-Agri
             </h3>
             <p className="text-secondary small">
-              Platform pencatatan fenotype makro berbasis Progressive Web App
-              (PWA). Didesain khusus untuk memvalidasi sinkronisasi data
-              langsung dari plot penangkaran lapangan di area *blank spot*
-              sinyal.
+              Platform dokumentasi operasional lapangan untuk mendukung pencatatan data agronomi secara terstruktur dan memvalidasi sinkronisasi data
+              langsung dari plot penangkaran lapangan di area blank spot sinyal.
             </p>
             <ul className="text-secondary small list-unstyled font-monospace mb-4">
               <li>
-                <span className="text-orange">✔</span> IndexedDB architecture for
-                offline cache
+                <span className="text-orange">✔</span> Structured field documentation without relying on an internet connection
               </li>
               <li>
-                <span className="text-orange">✔</span> Interactive SVG
-                micro-logging interface
+                <span className="text-orange">✔</span> Visual recording system for observing and validating agronomic data
               </li>
             </ul>
             <Button
@@ -202,7 +197,7 @@ function C4_ProjectSection() {
               target="_blank"
               className="btn-orange text-white font-monospace btn-sm px-4"
             >
-              LAUNCH_APP ↗
+              OPEN_PLATFORM ↗
             </Button>
           </Col>
           <Col lg={6} className="mb-2 mb-lg-0 d-flex justify-content-center">
